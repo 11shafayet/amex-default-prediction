@@ -1,5 +1,6 @@
-# Data
-data/
+# Data (keep folder structure, ignore contents)
+data/raw/*
+data/processed/*
 *.csv
 *.parquet
 
@@ -10,10 +11,13 @@ __pycache__/
 .venv/
 venv/
 
-# Models / outputs
-models/
+# Models / outputs (keep folders, ignore contents)
+models/*
 output/
-submissions/
+submissions/*
 
 # Env
 .env
+
+# Keep empty tracked folders
+!**/.gitkeep
