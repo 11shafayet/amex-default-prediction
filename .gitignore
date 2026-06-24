@@ -1,0 +1,23 @@
+# Data (keep folder structure, ignore contents)
+data/raw/*
+data/processed/*
+*.csv
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Models / outputs (keep folders, ignore contents)
+models/*
+output/
+submissions/*
+
+# Env
+.env
+
+# Keep empty tracked folders
+!**/.gitkeep
