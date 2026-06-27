@@ -39,6 +39,27 @@ Download the Parquet files into `data/raw/` (e.g. `train.parquet`, `test.parquet
 pip install -r requirements.txt
 ```
 
+## Run Current Notebook Split
+
+The current notebook work has been split into Python modules under `src/`.
+
+```bash
+python3 main.py
+```
+
+By default this loads `data/raw/train.parquet` and runs the same EDA checks from the notebook:
+
+- dataset row/customer count and memory info
+- missingness by feature prefix
+- statement-count distribution by customer
+- categorical column value summaries
+
+You can also run the EDA module directly with a custom file:
+
+```bash
+python3 -m src.eda --train-file data/raw/train.parquet
+```
+
 ## Links
 
 - Competition: https://www.kaggle.com/competitions/amex-default-prediction
