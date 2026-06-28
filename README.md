@@ -60,6 +60,13 @@ You can also run the EDA module directly with a custom file:
 python3 -m src.eda --train-file data/raw/train.parquet
 ```
 
+Stage 2 has been split into `src/metric.py`. It includes the top-4% capture
+function from the notebook plus the full AMEX metric:
+
+```bash
+python3 -m unittest tests/test_metric.py
+```
+
 ## Links
 
 - Competition: https://www.kaggle.com/competitions/amex-default-prediction
